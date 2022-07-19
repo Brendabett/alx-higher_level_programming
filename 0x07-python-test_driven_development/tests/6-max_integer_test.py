@@ -2,19 +2,19 @@
 """Unittest for max_integer([..])
 """
 import unittest
-max_integer = __import__(6-max_integer).max_integer
+max_integer = __import__('6-max_integer').max_integer
 
 
 class TestMaxInteger(unittest.TestCase):
     """unittest class for max_integer"""
     def test_module_docstring(self):
         """Test for module docstring"""
-        m = __import__(6-max_integer).__doc__
+        m = __import__('6-max_integer').__doc__
         self.assertTrue(len(m) > 1)
     
     def test_function_docstring(self):
         """Test for function docstring"""
-        f =  __import__(6-max_integer).max_integer.__doc__
+        f =  __import__('6-max_integer').max_integer.__doc__
         self.assertTrue(len(f) > 1)
 
     def test_empty_list(self):
