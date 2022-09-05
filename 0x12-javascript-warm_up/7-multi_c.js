@@ -1,11 +1,5 @@
 #!/usr/bin/node
-const { argv } = require('process');
-const occurence = Number(argv[2]);
-const display = () => {
-  for (let i = 0; i < occurence; i++) {
-    console.log('C is fun');
-  }
-};
-isNaN(occurence)
-  ? (console.log('Missing number of occurrences'))
-  : (display());
+const myArray = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+for (let i = 0; i < 3; i++) {
+  console.log(myArray[i]);
+}
