@@ -1,5 +1,9 @@
 #!/usr/bin/node
-const myArray = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-for (let i = 0; i < 3; i++) {
-  console.log(myArray[i]);
+const number = parseInt(process.argv[2]);
+if (Number.isNaN(number)) {
+  console.log('Not a number');
+} else {
+  for (let i = 0; i < number; i++) {
+    console.log('C is fun');
+  }
 }
