@@ -1,12 +1,12 @@
 #!/usr/bin/node
 const number = parseInt(process.argv[2]);
 if (Number.isNaN(number)) {
-  console.log(Missing size);
+  console.log('Missing size');
 } else {
   for (let i = 0, str; i < number; i++) {
-    str = ;
+    str = '';
     for (let j = 0; j < number; j++) {
-      str += X;
+      str += 'X';
     }
     console.log(str);
   }
