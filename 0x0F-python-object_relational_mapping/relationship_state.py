@@ -13,8 +13,8 @@ class State(Base):
     """Represents a state for a MySQL database.
     Attributes:
         __tablename__ (str): The name of the MySQL table to store States.
-        id (sqlalchemy.Integer): The states id
-        name (sqlalchemy.String): The states name.
+        id (sqlalchemy.Integer): The state's id
+        name (sqlalchemy.String): The state's name.
         cities (sqlalchemy.orm.relationship): The State-City relationship.
     """
     __tablename__ = "states"
