@@ -6,6 +6,7 @@ const BaseUrl = 'https://swapi-api.hbtn.io/api/films/';
 function MakeRequest (url) {
   return new Promise(function (resolve, reject) {
     request(url, (error, response, body) => {
+      if (!error && response.statusCode === 200) {
         resolve(body);
       } else {
         reject(error);
